@@ -1,10 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-main.svg";
+import Particle from "../Particle";
+import Type from "./Type";
+
 function Home() {
     return (
       <section>
         <Container fluid className="home-section" id="home">
+        <Particle />
           <Container className="home-content">
             <Row>
               <Col md={7} className="home-header">
@@ -21,6 +25,7 @@ function Home() {
                 </h1>
   
                 <div style={{ padding: 50, textAlign: "left" }}>
+                <Type />
                 </div>
               </Col>
   
