@@ -1,5 +1,8 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import AboutCard from "./AboutCard";
+import TechStack from "./TechStack";
+import ToolStack from "./ToolStack";
 import laptopImg from "../../Assets/about.png";
 
 function About() {
@@ -18,7 +21,7 @@ function About() {
               <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
                 Know Who <strong className="purple">I'M</strong>
               </h1>
-            
+              <AboutCard />
             </Col>
             <Col
               md={5}
@@ -31,9 +34,11 @@ function About() {
           <h1 className="project-heading">
             Professional <strong className="purple">Skillset </strong>
           </h1>
+          <TechStack />
           <h1 className="project-heading">
             <strong className="purple">Tools</strong> I use
           </h1>
+          <ToolStack />
         </Container>
       </Container>
     );
