@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import Home from './components/Home/Home'
+import Footer from './components/Footer';
 
 import './App.css'
 import {
@@ -16,6 +17,7 @@ function App() {
         <Routes>
            <Route path="/" element={<Home />} />
         </Routes>
+        <Footer />
       </Router>
     </>
   )
