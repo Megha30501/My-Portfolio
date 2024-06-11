@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useCallback } from "react";
 import Particles from "react-tsparticles";
+import { loadSlim } from "tsparticles-slim";
 
-function Particle() {
+const Particle = () => {
+  const particlesInit = useCallback(async (engine) => {
+    console.log("engine:", engine);
+    await loadSlim(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(async (container) => {
+    console.log("container:", container);
+  }, []);
+
   return (
     <Particles
       id="tsparticles"
-      params={{
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
         particles: {
           number: {
             value: 160,
@@ -50,6 +62,6 @@ function Particle() {
       }}
     />
   );
-}
+};
 
 export default Particle;
