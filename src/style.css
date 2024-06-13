@@ -307,7 +307,7 @@ html {
   
   .myAvtar {
     justify-content: center !important;
-    padding-top: 9em !important;
+    padding-top: 5em !important;
   }
   
   @media (max-width: 767px) {
@@ -320,7 +320,7 @@ html {
   .home-about-section {
     position: relative;
     padding-bottom: 70px !important;
-    padding-top: 70px !important;
+    padding-top: 10px !important;
   }
   
   .home-about-description {
@@ -338,7 +338,7 @@ html {
   
   .home-about-social {
     text-align: center !important;
-    padding-top: 25px;
+    padding-top: 35px;
     color: white !important;
   }
   
@@ -570,16 +570,20 @@ html {
       margin: 10px !important;
     }
   }
+
+
   
   .tech-icons:hover {
     transform: scale(1.05) !important;
     overflow: hidden !important;
     border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
   }
+
   .tech-icon-images {
     padding: 20px !important;
     line-height: 1.6 !important;
   }
+  
   
   .quote-card-view {
     border: none !important;
