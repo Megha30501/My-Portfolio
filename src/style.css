@@ -473,7 +473,7 @@ html {
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
   }
   
-  .blog-card {
+  /* .blog-card {
     padding-top: 50px !important;
     padding-bottom: 50px !important;
     padding-left: 25px !important;
@@ -494,15 +494,11 @@ html {
     text-decoration: none !important;
   }
   
-  .blog-link:hover {
-    cursor: pointer !important;
-  }
-  
   .blog-card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
     box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
-  }
+  } */
   
   .card-img-top {
     padding: 20px !important;
@@ -511,9 +507,12 @@ html {
   }
   
   .blog-img {
+    width:30rem ;
+    height: 15rem;
+   border-radius: 2%;
     padding: 0px !important;
     opacity: 0.8 !important;
-    border-radius: 0px !important;
+    
   }
   
   .btn-primary {
